@@ -1,0 +1,13 @@
+This GUI v1.0 bases on the TRANK_fit_spectra.py, namely, is used to calculate n and k when thickness is known.
+
+I made several changes to the previous code in order to display figs on those existing canvas which I will list below. Now the GUI presents results for one pass at a time, but such way of display can be switched to like presenting results for two passes for better comparison.
+
+And as for input, by now we can only tell the GUI where to find the input file but we still have to modify the basic_setup every time we use this code. We need to discuss further to make a list of requisite input parameters which are expected to be enough for calculation.
+
+Changes: 
+
+1.Set the thread for calculation to cpu_count-1 or the speed of plotting will be rather slow;
+
+2.Using matplotlib.figure to plot instead of pylab. Though pylab is starightforward, it might cause confusions when there are several axes;
+
+3.Return axes instead of figures, through that we can view all the pages by clicking the Prev or Next, and since we can store any images when viewing them, I deleted the auto-save sentences.
