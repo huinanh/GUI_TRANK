@@ -1,0 +1,14 @@
+TRANK_fit Interface is based on Mike's work, TRANK library, and thus share almost the same algorithm. This tool has two major functions, first is fit n,k when the thickness is known and the other is to find the most suitable thickness within the given range. Below are the basic steps to run this tool.
+
+
+
+First is to input. Users are expected to upload one text file for reflection data and another for transmission data. For now, the data in reflection files should follow such order: wavelength of normal deg, normal deg reflection, the wavelength of other degs, s-polarization reflection of some deg, p-polarization reflection of some deg. And for transmission files, there's only data of wavelength and normal incidence transmission. There are two sample input data under this folder, you can use them for reference.
+
+
+
+The second step is to set some parameters. It's ok if you just leave them there as there will be default values. But setting them, for instance, setting adaptation threshold may help you achieve better accuracy or more ideal speed. Besides, you can limit the range of lamda within which the program simulates to gain the desired part of the outcome.
+
+
+
+Above is a simple guidance of this tool. This is still a testing version at its primary stage. So any feedback or advice is highly appreciated. 
+
